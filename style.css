@@ -1,0 +1,45 @@
+/* calculation for responsive rotating-circle
+top = ((outer-circle{height} - inner-circle{height}) / 2)
+left = ((outer-circle{width} - inner-circle{width}) / 2)
+
+also:
+outer-circle{height} = 1.25 * inner-circle{height} 
+top = 0.25 * inner-circle{height} / 2 */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inner-circle {
+    position: relative;
+    height: 24rem;
+    width: 24rem;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.outer-circle {
+position: absolute;
+height: 30rem;
+width: 30rem;
+top: -3rem;
+left: -3rem;
+transform-origin: center;
+text-align: center;
+transition: transform 5s ease;
+}
+ 
+.inner-circle div:nth-child(1) {
+transform: rotate(120deg);
+}
+
+.inner-circle div:nth-child(2) {
+   transform: rotate(240deg);
+} 
+
+.inner-circle div:nth-child(3) {
+ transform: rotate(360deg);
+}   
