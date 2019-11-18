@@ -15,25 +15,25 @@ body {
 
 .inner-circle {
     position: relative;
-    height: 24rem;
-    width: 24rem;
+    height: 50vw;
+    width: 50vw;
     border-radius: 50%;
     border: 1px solid black;
 }
 
 .outer-circle {
-position: absolute;
-height: 30rem;
-width: 30rem;
-top: -3rem;
-left: -3rem;
-transform-origin: center;
-text-align: center;
-transition: transform 5s ease;
+    position: absolute;
+    height: calc(100% + 4rem);
+    width: calc(100% + 4rem);
+    top: -2rem;
+    left: -2rem;
+    transform-origin: center;
+    text-align: center;
+    transition: transform 5s ease;
 }
  
 .inner-circle div:nth-child(1) {
-transform: rotate(120deg);
+    transform: rotate(120deg);
 }
 
 .inner-circle div:nth-child(2) {
@@ -41,5 +41,5 @@ transform: rotate(120deg);
 } 
 
 .inner-circle div:nth-child(3) {
- transform: rotate(360deg);
+    transform: rotate(360deg);
 }   
